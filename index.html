@@ -90,12 +90,17 @@ h2 {
     background: #111827;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-4px);
+}
+
+/* FEATURED */
+.featured {
+    border: 1px solid #22c55e;
 }
 
 /* BUTTON */
@@ -138,7 +143,6 @@ ul {
 </head>
 
 <body>
-<!-- Portfolio -->
 
 <div class="layout">
 
@@ -168,10 +172,8 @@ ul {
     <h2>About</h2>
     <div class="card">
         <p>
-            Computer Science & Engineering student with hands-on experience in building cross-platform
-            software systems. Experienced in developing secure applications with GUI, CLI, CI/CD pipelines,
-            and deployment workflows. Currently strengthening core programming fundamentals while exploring
-            system design and machine learning.
+            Computer Science student building secure systems, cross-platform applications, and IoT-based solutions.
+            Focused on practical engineering and real-world problem solving.
         </p>
     </div>
 </div>
@@ -180,20 +182,20 @@ ul {
 <div class="section" id="projects">
     <h2>Projects</h2>
 
-    <div class="card">
+    <!-- FEATURED -->
+    <div class="card featured">
         <h3>Secure Password Generator (CLI + GUI + CI/CD)</h3>
         <p>
-            Developed a cross-platform password generator supporting both command-line and graphical interfaces,
+            Developed a cross-platform password generator supporting CLI and GUI interfaces,
             with secure password generation and automated build workflows.
         </p>
 
         <ul>
-            <li>Implemented cryptographically secure password generation using Python’s secrets module</li>
+            <li>Cryptographically secure password generation using Python’s secrets module</li>
             <li>Designed modular and scalable architecture</li>
-            <li>Built responsive GUI using Tkinter with real-time validation</li>
-            <li>Automated multi-platform builds using GitHub Actions CI/CD pipelines</li>
+            <li>Built responsive GUI using Tkinter</li>
+            <li>Automated CI/CD pipelines using GitHub Actions</li>
             <li>Packaged standalone applications using PyInstaller</li>
-            <li>Deployed project website using GitHub Pages</li>
         </ul>
 
         <p><b>Technologies:</b> Python, Tkinter, GitHub Actions, PyInstaller</p>
@@ -203,32 +205,18 @@ ul {
     </div>
 
     <div class="card">
-        <h3>Intelligent Environmental Monitoring and Statistical Anomaly Detection System (WIP)</h3>
+        <h3>Environmental Monitoring & Anomaly Detection System (WIP)</h3>
         <p>
-            Developing a real-time environmental monitoring system to detect statistical anomalies in indoor air conditions.
+            Developing a real-time IoT system to monitor environmental conditions and detect anomalies using statistical models.
         </p>
-
-        <ul>
-            <li>Integrating sensors for temperature, humidity, gas concentration, and particulate matter</li>
-            <li>Working with BME280, PMS7003, and SGP30 sensors</li>
-            <li>Designing covariance-aware statistical models for anomaly detection</li>
-        </ul>
-
         <p><b>Technologies:</b> ESP32, BME280, PMS7003, SGP30</p>
     </div>
 
     <div class="card">
         <h3>Smart Home Automation System</h3>
         <p>
-            Developed a WiFi-enabled home automation system for remote appliance control via mobile application.
+            Developed a WiFi-enabled system for remote appliance control via mobile applications using IoT integration.
         </p>
-
-        <ul>
-            <li>Integrated relay modules with Blynk IoT for real-time device management</li>
-            <li>Implemented communication between embedded hardware and mobile interface</li>
-            <li>Enabled reliable control of multiple appliances</li>
-        </ul>
-
         <p><b>Technologies:</b> ESP32, Blynk IoT, Relay Modules</p>
     </div>
 
@@ -238,10 +226,12 @@ ul {
 <div class="section" id="skills">
     <h2>Technical Skills</h2>
     <div class="card">
-        <p><b>Programming:</b> Python, C++, C, Kotlin, JavaScript</p>
-        <p><b>Embedded Systems:</b> ESP32, Arduino, Sensor Integration</p>
-        <p><b>Tools:</b> Git, GitHub, Arduino IDE, Android Studio, VS Code</p>
-        <p><b>Operating Systems:</b> Linux, macOS, Windows</p>
+        <ul>
+            <li><b>Programming:</b> Python, C++, C, Kotlin, JavaScript</li>
+            <li><b>Embedded Systems:</b> ESP32, Arduino, Sensor Integration</li>
+            <li><b>Tools:</b> Git, GitHub, CI/CD, Arduino IDE, Android Studio, VS Code</li>
+            <li><b>Operating Systems:</b> Linux, macOS, Windows</li>
+        </ul>
     </div>
 </div>
 
@@ -260,10 +250,9 @@ ul {
 <div class="section" id="contact">
     <h2>Contact</h2>
     <div class="card">
-        <p>Email: skmd.aarif5391@gmail.com</p>
-        <p>Phone: +91 99102 24613</p>
-        <p>GitHub: github.com/skmdaarif</p>
-        <p>LinkedIn: (add your link here)</p>
+        <p><a href="mailto:skmd.aarif5391@gmail.com">Email</a></p>
+        <p><a href="https://github.com/skmdaarif">GitHub</a></p>
+        <p><a href="#">LinkedIn</a></p>
     </div>
 </div>
 
@@ -271,7 +260,6 @@ ul {
 </div>
 
 <script>
-// Animation using IntersectionObserver
 const sections = document.querySelectorAll('.section');
 
 const observer = new IntersectionObserver(entries => {
