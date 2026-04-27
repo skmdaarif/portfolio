@@ -2,133 +2,308 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sheikh Md Aarif Al Zubair | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sheikh Md Aarif Al Zubair</title>
 
 <style>
 body {
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: #0f172a;
     color: #e2e8f0;
 }
 
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px;
+/* LAYOUT */
+.layout {
+    display: flex;
 }
 
-.hero h1 {
-    font-size: 40px;
+/* SIDEBAR */
+.sidebar {
+    width: 270px;
+    height: 100vh;
+    background: #020617;
+    padding: 40px 20px;
+    border-right: 1px solid #1e293b;
+    position: fixed;
+}
+
+.sidebar h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* NAV */
+.nav a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+.nav a.active {
     color: #22c55e;
 }
 
-.hero p {
-    color: #94a3b8;
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
+.nav a:hover {
+    color: #22c55e;
 }
 
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    background: #22c55e;
-    color: #020617;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #16a34a;
+/* CONTENT */
+.content {
+    margin-left: 270px;
+    padding: 60px;
+    max-width: 900px;
 }
 
 /* SECTION */
 .section {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    font-size: 14px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /* CARD */
 .card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    margin-top: 20px;
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 6px 14px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+.btn:hover {
+    border-color: #22c55e;
+    color: #22c55e;
 }
 
 /* LIST */
 ul {
     padding-left: 20px;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Sheikh Md Aarif Al Zubair</h1>
-    <p>
-        Computer Science Student focused on Software Development & Systems.
-        I enjoy building reliable applications, solving problems, and exploring system-level design.
-    </p>
+<div class="layout">
 
-    <a class="btn" href="https://github.com/skmdaarif">GitHub</a>
-    <a class="btn" href="Sheikh_Md_Aarif_Al_Zubair_Resume.pdf">Download Resume</a>
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h1>Sheikh Md Aarif Al Zubair</h1>
+
+    <div class="subtitle">
+        B.Tech CSE (2025–2029)<br>
+        CGPA: 9.68
+    </div>
+
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
 </div>
 
-<!-- PROJECT -->
-<div class="section">
-    <h2>🚀 Featured Project</h2>
+<!-- CONTENT -->
+<div class="content">
+
+<!-- ABOUT -->
+<div class="section visible" id="about">
+    <h2>About</h2>
+    <div class="card">
+        <p>
+            Computer Science & Engineering student with hands-on experience in building cross-platform
+            software systems. Experienced in developing secure applications with GUI, CLI, CI/CD pipelines,
+            and deployment workflows. Currently strengthening core programming fundamentals while exploring
+            system design and machine learning.
+        </p>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
+    <h2>Projects</h2>
 
     <div class="card">
-        <h3>Secure Password Generator</h3>
+        <h3>Secure Password Generator (CLI + GUI + CI/CD)</h3>
         <p>
-            A cross-platform password generator with CLI and GUI support,
-            featuring secure generation, validation rules, and automated builds.
+            Developed a cross-platform password generator supporting both command-line and graphical interfaces,
+            with secure password generation and automated build workflows.
         </p>
 
         <ul>
-            <li>Cryptographically secure password generation</li>
-            <li>GUI + CLI interfaces</li>
-            <li>CI/CD pipeline with GitHub Actions</li>
-            <li>Cross-platform builds (Windows, macOS, Linux)</li>
+            <li>Implemented cryptographically secure password generation using Python’s secrets module</li>
+            <li>Designed modular and scalable architecture</li>
+            <li>Built responsive GUI using Tkinter with real-time validation</li>
+            <li>Automated multi-platform builds using GitHub Actions CI/CD pipelines</li>
+            <li>Packaged standalone applications using PyInstaller</li>
+            <li>Deployed project website using GitHub Pages</li>
         </ul>
 
-        <a class="btn" href="https://github.com/skmdaarif/secure-password-generator">
-            GitHub Repo
-        </a>
+        <p><b>Technologies:</b> Python, Tkinter, GitHub Actions, PyInstaller</p>
 
-        <a class="btn" href="https://github.com/skmdaarif/secure-password-generator/releases">
-            Download App
-        </a>
+        <a class="btn" href="https://github.com/skmdaarif/secure-password-generator">Repository</a>
+        <a class="btn" href="https://github.com/skmdaarif/secure-password-generator/releases">Download</a>
     </div>
+
+    <div class="card">
+        <h3>Intelligent Environmental Monitoring and Statistical Anomaly Detection System (WIP)</h3>
+        <p>
+            Developing a real-time environmental monitoring system to detect statistical anomalies in indoor air conditions.
+        </p>
+
+        <ul>
+            <li>Integrating sensors for temperature, humidity, gas concentration, and particulate matter</li>
+            <li>Working with BME280, PMS7003, and SGP30 sensors</li>
+            <li>Designing covariance-aware statistical models for anomaly detection</li>
+        </ul>
+
+        <p><b>Technologies:</b> ESP32, BME280, PMS7003, SGP30</p>
+    </div>
+
+    <div class="card">
+        <h3>Smart Home Automation System</h3>
+        <p>
+            Developed a WiFi-enabled home automation system for remote appliance control via mobile application.
+        </p>
+
+        <ul>
+            <li>Integrated relay modules with Blynk IoT for real-time device management</li>
+            <li>Implemented communication between embedded hardware and mobile interface</li>
+            <li>Enabled reliable control of multiple appliances</li>
+        </ul>
+
+        <p><b>Technologies:</b> ESP32, Blynk IoT, Relay Modules</p>
+    </div>
+
 </div>
 
 <!-- SKILLS -->
-<div class="section">
-    <h2>💻 Skills</h2>
-
+<div class="section" id="skills">
+    <h2>Technical Skills</h2>
     <div class="card">
-        <p><b>Languages:</b> Python, C, JavaScript</p>
-        <p><b>Technologies:</b> Tkinter, CI/CD, PyInstaller</p>
-        <p><b>Concepts:</b> Software Development, Systems, Data Processing</p>
+        <p><b>Programming:</b> Python, C++, C, Kotlin, JavaScript</p>
+        <p><b>Embedded Systems:</b> ESP32, Arduino, Sensor Integration</p>
+        <p><b>Tools:</b> Git, GitHub, Arduino IDE, Android Studio, VS Code</p>
+        <p><b>Operating Systems:</b> Linux, macOS, Windows</p>
     </div>
 </div>
 
-<!-- FOOTER -->
-<div class="section" style="text-align:center; color:#94a3b8;">
-    <p>
-        Email: skmd.aarif5391@gmail.com<br>
-        GitHub: github.com/skmdaarif
-    </p>
-    © 2026 Sheikh Md Aarif Al Zubair
+<!-- EDUCATION -->
+<div class="section" id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><b>Lovely Professional University</b></p>
+        <p>Bachelor of Technology in Computer Science and Engineering</p>
+        <p>2025 – Present</p>
+        <p>CGPA: 9.68</p>
+    </div>
 </div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: skmd.aarif5391@gmail.com</p>
+        <p>Phone: +91 99102 24613</p>
+        <p>GitHub: github.com/skmdaarif</p>
+        <p>LinkedIn: (add your link here)</p>
+    </div>
+</div>
+
+</div>
+</div>
+
+<script>
+// Animation using IntersectionObserver
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+sections.forEach(section => observer.observe(section));
+
+// Active nav highlight
+const navLinks = document.querySelectorAll('.nav a');
+
+window.addEventListener('scroll', () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 120) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(a => {
+        a.classList.remove("active");
+        if (a.getAttribute("href") === "#" + current) {
+            a.classList.add("active");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
