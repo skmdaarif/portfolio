@@ -14,6 +14,16 @@ body {
     color: #e2e8f0;
 }
 
+/* GLOBAL LINKS FIX */
+a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #22c55e;
+}
+
 /* LAYOUT */
 .layout {
     display: flex;
@@ -38,16 +48,13 @@ body {
     font-size: 13px;
     color: #94a3b8;
     margin-bottom: 25px;
-    line-height: 1.5;
 }
 
 /* NAV */
 .nav a {
     display: block;
     color: #94a3b8;
-    text-decoration: none;
     margin: 10px 0;
-    transition: 0.2s;
 }
 
 .nav a.active {
@@ -98,11 +105,6 @@ h2 {
     transform: translateY(-4px);
 }
 
-/* FEATURED */
-.featured {
-    border: 1px solid #22c55e;
-}
-
 /* BUTTON */
 .btn {
     display: inline-block;
@@ -111,8 +113,6 @@ h2 {
     padding: 6px 14px;
     border: 1px solid #334155;
     border-radius: 6px;
-    text-decoration: none;
-    color: #e2e8f0;
     font-size: 13px;
 }
 
@@ -182,9 +182,8 @@ ul {
 <div class="section" id="projects">
     <h2>Projects</h2>
 
-    <!-- FEATURED -->
-    <div class="card featured">
-        <h3>Secure Password Generator (CLI + GUI + CI/CD)</h3>
+    <div class="card">
+        <h3>Secure Password Generator (CLI + GUI + CI/CD)<span style="color:#22c55e;">(Featured)</span></h3>
         <p>
             Developed a cross-platform password generator supporting CLI and GUI interfaces,
             with secure password generation and automated build workflows.
@@ -192,7 +191,7 @@ ul {
 
         <ul>
             <li>Cryptographically secure password generation using Python’s secrets module</li>
-            <li>Designed modular and scalable architecture</li>
+            <li>Modular and scalable architecture</li>
             <li>Built responsive GUI using Tkinter</li>
             <li>Automated CI/CD pipelines using GitHub Actions</li>
             <li>Packaged standalone applications using PyInstaller</li>
@@ -250,9 +249,10 @@ ul {
 <div class="section" id="contact">
     <h2>Contact</h2>
     <div class="card">
-        <p><a href="mailto:skmd.aarif5391@gmail.com">Email</a></p>
-        <p><a href="https://github.com/skmdaarif">GitHub</a></p>
-        <p><a href="#">LinkedIn</a></p>
+        <p><b>Email:</b> <a href="mailto:skmd.aarif5391@gmail.com">skmd.aarif5391@gmail.com</a></p>
+        <p><b>Phone:</b> <a href="tel:+919910224613">+91 99102 24613</a></p>
+        <p><b>GitHub:</b> <a href="https://github.com/skmdaarif">github.com/skmdaarif</a></p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/sheikh-md-aarif-al-zubair-a290b337a/">linkedin.com/sheikh-md-aarif-al-zubair</a></p>
     </div>
 </div>
 
