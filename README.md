@@ -93,6 +93,5 @@ I am a Computer Science & Engineering undergraduate at **Lovely Professional Uni
 ## 📬 Contact & Links
 
 * 📧 **Email:** [skmd.aarif5391@gmail.com](mailto:skmd.aarif5391@gmail.com)
-* 📱 **Phone:** +91 99102 24613
 * 💼 **LinkedIn:** [linkedin.com/in/sheikh-md-aarif-al-zubair-a290b337a](https://linkedin.com/in/sheikh-md-aarif-al-zubair-a290b337a)
 * 🐙 **GitHub:** [github.com/skmdaarif](https://github.com/skmdaarif)

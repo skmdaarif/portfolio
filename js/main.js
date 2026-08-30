@@ -327,19 +327,11 @@ function initMobileMenu() {
 // 7. Direct Copy Buttons with Visual Feedback
 function initCopyButtons() {
   const copyEmail = document.getElementById('btn-copy-email');
-  const copyPhone = document.getElementById('btn-copy-phone');
 
   if (copyEmail) {
     copyEmail.addEventListener('click', () => {
       navigator.clipboard.writeText('skmd.aarif5391@gmail.com');
       showToast('Copied skmd.aarif5391@gmail.com to clipboard!');
-    });
-  }
-
-  if (copyPhone) {
-    copyPhone.addEventListener('click', () => {
-      navigator.clipboard.writeText('+919910224613');
-      showToast('Copied +91 99102 24613 to clipboard!');
     });
   }
 }
