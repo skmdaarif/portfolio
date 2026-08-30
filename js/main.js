@@ -91,7 +91,7 @@ function initTypingEffect() {
   if (!typingElement) return;
 
   const words = [
-    'Autonomous UAV & RL Researcher',
+    'Autonomous UAV Navigation & RL Researcher',
     'Embedded Systems & Robotics Engineer',
     'IIT Delhi Research Intern',
     'First-Principles Deep Learning Developer',

@@ -1,7 +1,7 @@
 # Sheikh Md Aarif Al Zubair
 
 <p align="center">
-  <b>Computer Science Engineer • Autonomous UAV & Reinforcement Learning Researcher • Embedded Robotics Developer</b>
+  <b>Computer Science Engineer • Autonomous UAV Navigation & Reinforcement Learning Researcher • Embedded Robotics Developer</b>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 ## 👨‍💻 About Me
 
 I am a Computer Science & Engineering undergraduate at **Lovely Professional University** (CGPA: 9.80 / 10.0) with deep interests in:
-- **Autonomous Systems & Reinforcement Learning:** Formulating MDPs, model-based RL, and neural trajectory optimization.
+- **Autonomous UAV Navigation & Reinforcement Learning:** Formulating MDPs, model-based RL, and neural trajectory optimization for aerial systems.
 - **Embedded Hardware & Robotics:** Architecting multi-sensor arrays, edge anomaly detection, and power regulation on ESP32 microcontrollers.
 - **First-Principles Software Engineering:** Building neural architectures, mathematical validation pipelines, and cross-platform desktop applications.
 
@@ -26,11 +26,11 @@ I am a Computer Science & Engineering undergraduate at **Lovely Professional Uni
 ## 🔬 Research Experience
 
 ### **Indian Institute of Technology Delhi** | *Research Intern* `Jun 2026 – Jul 2026`
-**Autonomous UAV Trajectory Optimization** *(Supervised by Prof. Brejesh Lall & Dr. Shoaib M. Nasti)*
+**Autonomous UAV Navigation & Trajectory Optimization** *(Supervised by Prof. Brejesh Lall & Dr. Shoaib M. Nasti)*
 - **First-Principles Deep Learning:** Implemented a Multi-Layer Perceptron (MLP) from scratch in pure Python/NumPy ($N = 40,401$ samples) across 7 mathematical loss topographies, achieving **$1.11 \times 10^{-8}$ MSE** and validating analytical gradients via finite-difference checking (**$< 10^{-7}$ relative error**).
 - **Benchmarking Framework:** Engineered a scalable pipeline incorporating 80/20 train/test splits, Adam optimization, gradient clipping, $L_2$ regularization, and learning rate schedulers across 9 hyperparameter configurations.
 - **Reinforcement Learning Benchmarks:** Evaluated 11 tabular, eligibility trace, and model-based RL agents (**Dyna-Q+**, **Prioritized Sweeping min-heap queues**, **Double Q-Learning**) on discrete MDPs, benchmarking TD-error variance and convergence dynamics.
-- **UAV Swarm SOTA Literature Synthesis:** Authored a comprehensive research survey synthesizing Goal-Conditioned RL (GCRL), POMDP belief state reconstruction under electronic warfare (EW) jamming, and MAPPO continuous policy gradients.
+- **Autonomous UAV Navigation SOTA Literature Synthesis:** Authored a comprehensive research survey synthesizing Goal-Conditioned RL (GCRL), POMDP belief state reconstruction under electronic warfare (EW) jamming, and MAPPO continuous policy gradients for autonomous UAV swarms.
 
 ---
 
